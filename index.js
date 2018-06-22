@@ -28,10 +28,10 @@ function currentLine(line) {
   katzDeliLine.push(line);
   
   //used if statement to give two conditional paths/branches. If there is a value and if there isnt.
-  if (arguments.length > 0)
+  if (line.length > 0)
   {
     //used a for loop to execute code block until conditions were met before returning the values to an array then concating with message variable.
-    for (i = 0; i < arguments.length; i++) {
+    for (i = 0; i < line.length; i++) {
     ref.push(" " + (i +1)  + ". " + line[i]); 
     }
     return message + ref;
